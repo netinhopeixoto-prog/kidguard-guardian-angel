@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import CTASection from "@/components/CTASection";
+import ProofSection from "@/components/ProofSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
@@ -12,6 +13,7 @@ const Index = () => {
       <HeroSection />
       <ProblemSection />
       <CTASection />
+      <ProofSection />
       <BenefitsSection />
       <TestimonialsSection />
       <FinalCTASection />

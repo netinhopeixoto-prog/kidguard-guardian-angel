@@ -1,35 +1,34 @@
-import { Check, Users, Clock, Shield } from "lucide-react";
+import { Users, Clock, Shield } from "lucide-react";
 
 const BenefitsSection = () => {
   const benefits = [
     {
       icon: Users,
-      title: "Focado em pais responsáveis",
-      description: "Desenvolvido especificamente para famílias que valorizam a segurança digital"
+      title: "🎯 PAIS INTELIGENTES",
+      description: "Para pais que não esperam tragédias acontecerem para agir"
     },
     {
       icon: Clock,
-      title: "Simples e prático",
-      description: "Interface intuitiva que não requer conhecimento técnico avançado"
+      title: "⚡ PROTEÇÃO IMEDIATA",
+      description: "Ative em minutos e durma tranquilo sabendo que seus filhos estão seguros"
     },
     {
       icon: Shield,
-      title: "Acesso imediato e exclusivo",
-      description: "Comece a proteger sua família agora mesmo, sem complicações"
+      title: "🚨 ACESSO URGENTE",
+      description: "Cada hora sem proteção é uma oportunidade para predadores agirem"
     }
   ];
 
   return (
-    <section className="py-20 bg-card">
+    <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Conteúdo criado especialmente para famílias
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              🛡️ ESCUDO DIGITAL EXCLUSIVO
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Este é um conteúdo criado especialmente para famílias que valorizam 
-              segurança digital e querem oferecer um ambiente mais saudável para seus filhos.
+            <p className="text-xl text-accent font-semibold">
+              Sistema de controle parental utilizado por famílias que REALMENTE se importam com a segurança dos filhos
             </p>
           </div>
           
@@ -37,26 +36,34 @@ const BenefitsSection = () => {
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (
-                <div key={index} className="text-center space-y-6">
-                  <div className="flex justify-center">
-                    <div className="p-4 bg-accent/10 rounded-full">
+                <div key={index} className="text-center p-8 bg-gradient-accent rounded-lg border-2 border-accent shadow-accent">
+                  <div className="flex justify-center mb-6">
+                    <div className="p-4 bg-accent-foreground rounded-full">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
                   </div>
                   
-                  <div className="flex items-center justify-center gap-2">
-                    <Check className="h-5 w-5 text-accent flex-shrink-0" />
-                    <h3 className="font-semibold text-foreground">
-                      {benefit.title}
-                    </h3>
-                  </div>
+                  <h3 className="text-xl font-semibold text-accent-foreground mb-4">
+                    {benefit.title}
+                  </h3>
                   
-                  <p className="text-muted-foreground">
+                  <p className="text-accent-foreground/90 font-medium">
                     {benefit.description}
                   </p>
                 </div>
               );
             })}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-card border-2 border-destructive rounded-lg p-6 inline-block">
+              <p className="text-destructive font-bold text-xl">
+                ⏰ OFERTA LIMITADA
+              </p>
+              <p className="text-foreground mt-2">
+                Apenas para os primeiros 1.000 pais responsáveis
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield } from "lucide-react";
+import { Shield, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-protection.jpg";
 
 const HeroSection = () => {
@@ -21,18 +21,17 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-              <Shield className="h-8 w-8 text-accent" />
-              <span className="text-accent font-semibold">Proteção Digital</span>
+              <Shield className="h-8 w-8 text-destructive animate-pulse" />
+              <span className="text-destructive font-bold text-lg">PROTEÇÃO URGENTE</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight">
-              🛡️ Mais tranquilidade para pais, 
-              <span className="text-accent"> mais proteção para crianças</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+              🚨 Proteja seus filhos dos <span className="text-destructive">perigos ocultos</span> da internet
             </h1>
             
-            <p className="text-xl text-primary-foreground/90 max-w-2xl">
-              Uma forma simples de acompanhar e cuidar do que realmente importa: 
-              a segurança dos pequenos.
+            <p className="text-xl text-muted-foreground max-w-2xl">
+              <span className="text-destructive font-bold">Predadores online, conteúdos impróprios e ameaças reais</span> estão a um clique dos seus filhos. <br/>
+              <span className="text-foreground font-semibold">Você tem o controle para protegê-los AGORA.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -40,17 +39,18 @@ const HeroSection = () => {
                 variant="cta" 
                 size="lg" 
                 onClick={handleCTAClick}
-                className="text-lg px-8 py-6 h-auto"
+                className="text-xl px-8 py-6 h-auto group animate-pulse"
               >
-                👉 Quero garantir o acesso agora
+                🛡️ PROTEGER MINHA FAMÍLIA AGORA
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
-                variant="hero" 
-                size="lg" 
-                className="text-lg px-8 py-6 h-auto"
+                variant="outline" 
+                size="lg"
+                className="text-lg px-8 py-6 h-auto border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               >
-                Ver mais detalhes
+                Ver os perigos que você não conhece
               </Button>
             </div>
           </div>

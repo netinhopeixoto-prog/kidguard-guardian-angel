@@ -4,44 +4,47 @@ const ProblemSection = () => {
   return (
     <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="max-w-6xl mx-auto text-center space-y-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="flex flex-col items-center space-y-4">
-              <div className="p-4 bg-primary/10 rounded-full">
-                <Globe className="h-8 w-8 text-primary" />
+              <div className="p-4 bg-destructive/20 rounded-full border-2 border-destructive">
+                <Globe className="h-8 w-8 text-destructive" />
               </div>
-              <h3 className="font-semibold text-foreground">Mundo Conectado</h3>
+              <h3 className="font-bold text-destructive text-xl">PREDADORES ONLINE</h3>
             </div>
             
             <div className="flex flex-col items-center space-y-4">
-              <div className="p-4 bg-destructive/10 rounded-full">
+              <div className="p-4 bg-destructive/20 rounded-full border-2 border-destructive">
                 <AlertTriangle className="h-8 w-8 text-destructive" />
               </div>
-              <h3 className="font-semibold text-foreground">Informações e Distrações</h3>
+              <h3 className="font-bold text-destructive text-xl">CONTEÚDOS IMPRÓPRIOS</h3>
             </div>
             
             <div className="flex flex-col items-center space-y-4">
-              <div className="p-4 bg-accent/10 rounded-full">
-                <Heart className="h-8 w-8 text-accent" />
+              <div className="p-4 bg-destructive/20 rounded-full border-2 border-destructive">
+                <Heart className="h-8 w-8 text-destructive" />
               </div>
-              <h3 className="font-semibold text-foreground">Cuidado Parental</h3>
+              <h3 className="font-bold text-destructive text-xl">ADULTIZAÇÃO PRECOCE</h3>
             </div>
           </div>
           
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-relaxed">
-              Vivemos em um mundo conectado, cheio de informações e distrações 
-              a apenas um clique de distância.
-            </h2>
-            
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              E, como pais, é natural querer estar um passo à frente para proteger 
-              nossas crianças nesse ambiente.
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              <span className="text-destructive font-bold">ATENÇÃO PAIS:</span> Enquanto você lê isso, <span className="text-accent font-semibold">milhares de crianças estão sendo expostas a conteúdos sexualizados, pedófilos e predadores online</span>.
             </p>
             
-            <div className="bg-card rounded-xl p-8 shadow-soft border-l-4 border-primary">
-              <p className="text-2xl font-semibold text-foreground">
-                Mas como equilibrar liberdade, aprendizado e segurança?
+            <div className="bg-gradient-accent p-8 rounded-lg border-2 border-accent shadow-accent">
+              <p className="text-2xl md:text-3xl font-bold text-accent-foreground text-center">
+                ⚠️ Você sabe REALMENTE o que seu filho acessa quando está "só brincando" no celular?
+              </p>
+            </div>
+            
+            <div className="bg-card border-2 border-destructive rounded-lg p-6">
+              <p className="text-lg text-foreground">
+                <span className="text-destructive font-bold">FATOS ALARMANTES:</span><br/>
+                • 1 em cada 7 crianças recebe abordagens sexuais online<br/>
+                • 89% dos menores são expostos a pornografia antes dos 16 anos<br/>
+                • Predadores levam apenas 3 minutos para iniciar uma conversa inadequada
               </p>
             </div>
           </div>
